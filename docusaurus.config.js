@@ -49,6 +49,14 @@ const config = {
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
+        googleAnalytics: {
+          trackingID: "G-ELV55124T4",
+          anonymizeIP: false,
+        },
+        sitemap: {
+          changefreq: 'daily',
+          filename: "sitemap.xml",
+        }
       }),
     ],
   ],
@@ -57,11 +65,14 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: '',
         logo: {
           alt: 'NEST Protocol Logo',
           src: 'img/logo.svg',
+          style: {
+            height: '20px',
+          }
         },
+        hideOnScroll: true,
         items: [
           {to: '/nest-fi', label: 'NEST Fi', position: 'right'},
           {
@@ -73,14 +84,15 @@ const config = {
           {to: '/news', label: 'News', position: 'right'},
           {to: '/nest-research-academy', label: 'NEST Research Academy', position: 'right'},
           {
-            label: 'App',
+            label: "APP",
             href: 'https://finance.nestprotocol.org/',
-            position: "right"
+            position: "right",
+            className: "navbar-item",
           }
         ],
       },
       footer: {
-        style: 'dark',
+        style: 'light',
         links: [
           {
             title: 'Docs',
@@ -128,6 +140,22 @@ const config = {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
       },
+      colorMode: {
+        defaultMode: 'light',
+        disableSwitch: true
+      },
+      metadata: [
+        {name: "twitter:card", content: "summary_large_image"},
+        {name: "twitter:site", content: "@nest_protocol"},
+        {name: "twitter:title", content: "NEST Protocol"},
+        {name: "twitter:description", content: "NEST is a blockchain-based probability virtual machine (PVM) system with web3 applications of DeFi, GameFi, NFT built on it."},
+        {name: "og:url", content: "https://nestprotocol.org/"},
+        {name: "og:title", content: "NEST Protocol"},
+        {name: "og:type", content: "website"},
+        {name: "og:site_name", content: "NEST Protocol"},
+        {name: "og:image", content: "https://www.nestprotocol.org/img/logo.svg"},
+        
+      ],
     }),
 };
 
