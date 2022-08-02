@@ -52,6 +52,15 @@
     font-weight: 600;
 }
 
+.menu__link {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.menu__link--active {
+    font-weight: 600;
+}
+
 /* cyrillic-ext */
 @font-face {
     font-family: 'Montserrat';
