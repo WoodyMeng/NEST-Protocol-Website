@@ -13,12 +13,12 @@ const config = {
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-
+  
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'NEST-Protocol', // Usually your GitHub org/user name.
   projectName: 'NEST-Protocol-Website', // Usually your repo name.
-
+  
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
   // to replace "en" with "zh-Hans".
@@ -26,7 +26,7 @@ const config = {
     defaultLocale: 'en',
     locales: ['en'],
   },
-
+  
   presets: [
     [
       'classic',
@@ -37,14 +37,14 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+              'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+              'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -60,103 +60,105 @@ const config = {
       }),
     ],
   ],
-
+  
   themeConfig:
-    /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
-    ({
-      navbar: {
-        logo: {
-          alt: 'NEST Protocol Logo',
-          src: 'img/logo.svg',
-          style: {
-            height: '20px',
-          }
+  /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
+      ({
+        navbar: {
+          logo: {
+            alt: 'NEST Protocol Logo',
+            src: 'img/logo.svg',
+            style: {
+              height: '20px',
+            }
+          },
+          hideOnScroll: true,
+          items: [
+            {to: '/nest-fi', label: 'NEST Fi', position: 'right'},
+            {
+              type: 'doc',
+              docId: 'NEST-PVM/Concept',
+              position: 'right',
+              label: 'Developers',
+            },
+            {to: '/news', label: 'News', position: 'right'},
+            {to: '/nest-research-academy', label: 'NEST Research Academy', position: 'right'},
+            {
+              type: 'html',
+              position: 'right',
+              value: `<a href="https://finance.nestprotocol.org/" class="nav-app-item">App</a>`,
+            },
+          ],
         },
-        hideOnScroll: true,
-        items: [
-          {to: '/nest-fi', label: 'NEST Fi', position: 'right'},
+        footer: {
+          style: 'light',
+          links: [
+            {
+              title: 'Docs',
+              items: [
+                {
+                  label: 'Tutorial',
+                  to: '/docs/intro',
+                },
+              ],
+            },
+            {
+              title: 'Community',
+              items: [
+                {
+                  label: 'Stack Overflow',
+                  href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+                },
+                {
+                  label: 'Discord',
+                  href: 'https://discordapp.com/invite/docusaurus',
+                },
+                {
+                  label: 'Twitter',
+                  href: 'https://twitter.com/docusaurus',
+                },
+              ],
+            },
+            {
+              title: 'More',
+              items: [
+                {
+                  label: 'Blog',
+                  to: '/blog',
+                },
+                {
+                  label: 'GitHub',
+                  href: 'https://github.com/facebook/docusaurus',
+                },
+              ],
+            },
+          ],
+          copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        },
+        prism: {
+          theme: lightCodeTheme,
+          darkTheme: darkCodeTheme,
+        },
+        colorMode: {
+          defaultMode: 'light',
+          disableSwitch: true
+        },
+        metadata: [
+          {name: "twitter:card", content: "summary_large_image"},
+          {name: "twitter:site", content: "@nest_protocol"},
+          {name: "twitter:title", content: "NEST Protocol"},
           {
-            type: 'doc',
-            docId: 'NEST-PVM/Concept',
-            position: 'right',
-            label: 'Developers',
+            name: "twitter:description",
+            content: "NEST is a blockchain-based probability virtual machine (PVM) system with web3 applications of DeFi, GameFi, NFT built on it."
           },
-          {to: '/news', label: 'News', position: 'right'},
-          {to: '/nest-research-academy', label: 'NEST Research Academy', position: 'right'},
-          {
-            label: "APP",
-            href: 'https://finance.nestprotocol.org/',
-            position: "right",
-            className: "navbar-item",
-          }
-        ],
-      },
-      footer: {
-        style: 'light',
-        links: [
-          {
-            title: 'Docs',
-            items: [
-              {
-                label: 'Tutorial',
-                to: '/docs/intro',
-              },
-            ],
-          },
-          {
-            title: 'Community',
-            items: [
-              {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-              },
-              {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
-              },
-              {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
-              },
-            ],
-          },
-          {
-            title: 'More',
-            items: [
-              {
-                label: 'Blog',
-                to: '/blog',
-              },
-              {
-                label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
-              },
-            ],
-          },
-        ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
-      },
-      prism: {
-        theme: lightCodeTheme,
-        darkTheme: darkCodeTheme,
-      },
-      colorMode: {
-        defaultMode: 'light',
-        disableSwitch: true
-      },
-      metadata: [
-        {name: "twitter:card", content: "summary_large_image"},
-        {name: "twitter:site", content: "@nest_protocol"},
-        {name: "twitter:title", content: "NEST Protocol"},
-        {name: "twitter:description", content: "NEST is a blockchain-based probability virtual machine (PVM) system with web3 applications of DeFi, GameFi, NFT built on it."},
-        {name: "og:url", content: "https://nestprotocol.org/"},
-        {name: "og:title", content: "NEST Protocol"},
-        {name: "og:type", content: "website"},
-        {name: "og:site_name", content: "NEST Protocol"},
-        {name: "og:image", content: "https://www.nestprotocol.org/img/logo.svg"},
+          {name: "og:url", content: "https://nestprotocol.org/"},
+          {name: "og:title", content: "NEST Protocol"},
+          {name: "og:type", content: "website"},
+          {name: "og:site_name", content: "NEST Protocol"},
+          {name: "og:image", content: "https://www.nestprotocol.org/img/logo.svg"},
         
-      ],
-    }),
+        ],
+      }),
 };
 
 module.exports = config;
