@@ -9,6 +9,10 @@
     justify-content: center;
 }
 
+.navbar__item {
+    padding: 0;
+}
+
 .navbar__inner {
     /*max-width: 1440px;*/
 }
@@ -27,6 +31,7 @@
     display: flex;
     justify-content: center;
     height: 100%;
+    padding-left: 12px;
 }
 
 .nav-app-item:hover {

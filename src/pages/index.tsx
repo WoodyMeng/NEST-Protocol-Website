@@ -14,7 +14,7 @@ export default function Home(): JSX.Element {
   return (
     <Layout
       title={`Home | ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
+      description="NEST is a blockchain-based probability virtual machine (PVM) system with web3 applications of DeFi, GameFi, NFT built on it.">
       <Stack spacing={['56px', '80px']} pb={['56px', '80px']}>
         <Banner/>
         <NestFi/>
