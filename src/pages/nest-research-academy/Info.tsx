@@ -1,7 +1,5 @@
 import {Center, Heading, HStack, Stack, Text, useMediaQuery} from "@chakra-ui/react";
 import * as React from "react";
-import Research_bg_2 from '../../assets/image/Research/Research_bg_2.jpg'
-import Research_bg_3 from '../../assets/image/Research/Research_bg_3.jpg'
 
 const Info = () => {
   const [isDesktop] = useMediaQuery('(min-width: 768px)')
@@ -10,7 +8,7 @@ const Info = () => {
     return (
       <Stack spacing={'48px'} align={'center'}>
         <HStack w={"full"} spacing={'44px'} maxW={'1440px'}>
-          <Center color={'#003232'} fontWeight={"semibold"} w={'full'} h={'440px'} bgImage={Research_bg_2} bgPosition={"center"}
+          <Center color={'#003232'} fontWeight={"semibold"} w={'full'} h={'440px'} bgImage={"/image/Research/Research_bg_2.jpg"} bgPosition={"center"}
                   bgSize={"cover"}>
             <Stack
               fontWeight={'semibold'}
@@ -31,7 +29,7 @@ const Info = () => {
                 workshops, webinars, and AMA.</Text>
             </Stack>
           </Center>
-          <Center color={'#003232'} fontWeight={"semibold"} w={'full'} h={'440px'} bgImage={Research_bg_3} bgPosition={"center"}
+          <Center color={'#003232'} fontWeight={"semibold"} w={'full'} h={'440px'} bgImage={"/image/Research/Research_bg_3.jpg"} bgPosition={"center"}
                   bgSize={"cover"}>
             <Stack
               fontWeight={'semibold'}
@@ -60,7 +58,7 @@ const Info = () => {
     return (
       <Stack spacing={'48px'} align={'center'}>
         <Stack w={"full"} spacing={'44px'} maxW={'1440px'}>
-          <Center color={'#003232'} fontWeight={"semibold"} w={'full'} h={'440px'} bgImage={Research_bg_2} bgPosition={"center"}
+          <Center color={'#003232'} fontWeight={"semibold"} w={'full'} h={'440px'} bgImage={"/image/Research/Research_bg_2.jpg"} bgPosition={"center"}
                   bgSize={"cover"}>
             <Stack
               p={'24px'}
@@ -78,7 +76,7 @@ const Info = () => {
               </Text>
             </Stack>
           </Center>
-          <Center color={'#003232'} fontWeight={"semibold"} w={'full'} h={'440px'} bgImage={Research_bg_3} bgPosition={"center"}
+          <Center color={'#003232'} fontWeight={"semibold"} w={'full'} h={'440px'} bgImage={"/image/Research/Research_bg_3.jpg"} bgPosition={"center"}
                   bgSize={"cover"}>
             <Stack
               p={'24px'}

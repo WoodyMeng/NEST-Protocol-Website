@@ -1,11 +1,6 @@
 import {Button, Stack, chakra, Text, useMediaQuery, Heading} from "@chakra-ui/react"
 import * as React from "react";
 import BigTitle from "../../components/BigTitle";
-import Home_bg_2 from '../../assets/image/Home/Home_bg_2.jpg'
-import Home_bg_2_phone from '../../assets/image/Home/Home_bg_2_phone.jpg'
-import icon_1 from '../../assets/image/Home/icon_1.png'
-import Home_bg_icon_2 from '../../assets/image/Home/Home_bg_icon_2.png'
-import Home_bg_icon_2_phone from '../../assets/image/Home/Home_bg_icon_2_phone.png'
 
 const NESTFi = () => {
   const [isDesktop] = useMediaQuery('(min-width: 768px)')
@@ -19,19 +14,19 @@ const NESTFi = () => {
         w={'full'}
         justify={'center'}
         spacing={['13px', '16px']}
-        bgImage={isDesktop ? Home_bg_2 : Home_bg_2_phone}
+        bgImage={isDesktop ? "/image/Home/Home_bg_2.jpg" : "/image/Home/Home_bg_2_phone.jpg"}
         bgSize={'cover'}
         bgPosition={"center"}
       >
         <chakra.img
           position={"absolute"}
-          src={isDesktop ? Home_bg_icon_2 : Home_bg_icon_2_phone}
+          src={isDesktop ? "/image/Home/Home_bg_icon_2.png" : "/image/Home/Home_bg_icon_2_phone.png"}
           alt={'NEST'}
           minH={'440px'}
           objectFit={'cover'}
           overflow={"hidden"}
         />
-        <chakra.img src={icon_1} zIndex={1} h={['55px', '110px']}/>
+        <chakra.img src={"/image/Home/icon_1.png"} zIndex={1} h={['55px', '110px']}/>
         <Heading
           fontSize={['17px', '24px']}
           fontWeight={'semibold'}

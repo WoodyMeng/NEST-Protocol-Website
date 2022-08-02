@@ -1,12 +1,7 @@
 import {chakra, Heading, Link, Stack, Text, useMediaQuery} from "@chakra-ui/react";
 import * as React from "react";
 import BigTitle from "../../components/BigTitle";
-import Home_bg_5 from '../../assets/image/Home/Home_bg_5.jpg'
-import Home_bg_5_phone from '../../assets/image/Home/Home_bg_5_phone.jpg'
-import Icon2 from '../../assets/image/Home/icon_2.png'
 import {ChevronRightIcon} from "@chakra-ui/icons";
-import Home_bg_icon_3 from '../../assets/image/Home/Home_bg_icon_3.png'
-import Home_bg_icon_3_phone from '../../assets/image/Home/Home_bg_icon_3_phone.png'
 
 const Research = () => {
   const [isDesktop] = useMediaQuery('(min-width: 768px)')
@@ -20,19 +15,19 @@ const Research = () => {
         w={'full'}
         justify={'center'}
         spacing={['13px', '16px']}
-        bgImage={isDesktop ? Home_bg_5: Home_bg_5_phone}
+        bgImage={isDesktop ? "/image/Home/Home_bg_5.jpg" : "/image/Home/Home_bg_5_phone.jpg"}
         bgSize={'cover'}
         bgPosition={"center"}
       >
         <chakra.img
           position={"absolute"}
-          src={isDesktop ? Home_bg_icon_3 : Home_bg_icon_3_phone}
+          src={isDesktop ? "/image/Home/Home_bg_icon_3.png" : "/image/Home/Home_bg_icon_3_phone.png"}
           alt={'NEST'}
           minH={'440px'}
           objectFit={'cover'}
           overflow={"hidden"}
         />
-        <chakra.img src={Icon2} zIndex={1} h={['55px', '110px']}/>
+        <chakra.img src={"/image/Home/icon_2.png"} zIndex={1} h={['55px', '110px']}/>
         <Heading
           fontSize={['17px', '24px']}
           fontWeight={'semibold'}

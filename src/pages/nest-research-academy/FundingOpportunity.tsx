@@ -1,11 +1,6 @@
 import {chakra, Link, Stack, Text, useMediaQuery} from "@chakra-ui/react";
 import BigTitle from "../../components/BigTitle";
 import * as React from "react";
-import Research_bg_4 from '../../assets/image/Research/Research_bg_4.jpg'
-import Research_bg_4_phone from '../../assets/image/Research/Research_bg_4.jpg'
-import icon1 from '../../assets/image/Research/icon_1.png'
-import Research_bg_icon_2 from '../../assets/image/Research/Research_bg_icon_2.png'
-import Research_bg_icon_2_phone from '../../assets/image/Research/Research_bg_icon_2_phone.png'
 
 const FundingOpportunity = () => {
   const [isDesktop] = useMediaQuery('(min-width: 768px)')
@@ -19,20 +14,20 @@ const FundingOpportunity = () => {
         w={'full'}
         justify={'center'}
         spacing={['13px', '16px']}
-        bgImage={isDesktop ? Research_bg_4 : Research_bg_4_phone}
+        bgImage={isDesktop ? "/image/Research/Research_bg_4.jpg" : "/image/Research/Research_bg_4.jpg"}
         bgSize={'cover'}
         bgPosition={"center"}
         px={'24px'}
       >
         <chakra.img
           position={"absolute"}
-          src={isDesktop ? Research_bg_icon_2 : Research_bg_icon_2_phone}
+          src={isDesktop ? "/image/Research/Research_bg_icon_2.png" : "/image/Research/Research_bg_icon_2_phone.png"}
           alt={'NEST'}
           minH={'440px'}
           objectFit={'cover'}
           overflow={"hidden"}
         />
-        <chakra.img src={icon1} zIndex={1}/>
+        <chakra.img src={"/image/Research/icon_1.png"} zIndex={1}/>
         <Text
           zIndex={1}
           fontSize={['12px', '15px']}

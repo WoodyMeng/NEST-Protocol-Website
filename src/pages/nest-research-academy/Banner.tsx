@@ -1,9 +1,5 @@
 import {Stack, Text, chakra, useMediaQuery, Heading} from "@chakra-ui/react";
 import * as React from "react";
-import Research_bg_1 from '../../assets/image/Research/Research_bg_1.jpg'
-import Research_bg_icon_1 from '../../assets/image/Research/Research_bg_icon_1.png'
-import Research_bg_1_phone from '../../assets/image/Research/Research_bg_1_phone.jpg'
-import Research_bg_icon_1_phone from '../../assets/image/Research/Research_bg_icon_1_phone.png'
 
 const Banner = () => {
   const [isDesktop] = useMediaQuery('(min-width: 768px)')
@@ -14,7 +10,7 @@ const Banner = () => {
       h={'full'}
       justify={'center'}
       minH={['540px', '660px']}
-      bgImage={isDesktop ? Research_bg_1 : Research_bg_1_phone}
+      bgImage={isDesktop ? "/image/Research/Research_bg_1.jpg" : "/image/Research/Research_bg_1_phone.jpg"}
       bgSize={'cover'}
       bgPosition={"center"}
       spacing={0}
@@ -22,7 +18,7 @@ const Banner = () => {
     >
       <chakra.img
         position={"absolute"}
-        src={isDesktop ? Research_bg_icon_1 : Research_bg_icon_1_phone}
+        src={isDesktop ? "/image/Research/Research_bg_icon_1.png" : "/image/Research/Research_bg_icon_1_phone.png"}
         alt={'NEST'}
         minH={['540px', '660px']}
         objectFit={'cover'}
