@@ -7,8 +7,8 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'NEST Protocol',
-  tagline: 'Dinosaurs are cool',
-  url: 'https://your-docusaurus-test-site.com',
+  tagline: `NEST is a blockchain-based probability virtual machine (PVM) system with web3 applications of DeFi, GameFi, NFT built on it.`,
+  url: 'https://www.nestprotocol.org',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -86,7 +86,7 @@ const config = {
             {
               type: 'html',
               position: 'right',
-              value: `<a href="https://finance.nestprotocol.org/" class="nav-app-item">App</a>`,
+              value: `<a href="https://finance.nestprotocol.org/" target="_blank" class="nav-app-item">App</a>`,
             },
           ],
         },
@@ -156,7 +156,6 @@ const config = {
           {name: "og:type", content: "website"},
           {name: "og:site_name", content: "NEST Protocol"},
           {name: "og:image", content: "https://www.nestprotocol.org/img/logo.svg"},
-        
         ],
       }),
 };
