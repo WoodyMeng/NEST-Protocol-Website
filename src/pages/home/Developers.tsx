@@ -23,7 +23,7 @@ const Developers = () => {
                 is a virtual machine-like structure based
                 on the basic function library.
               </Text>
-              <Link color={'#00A0E9'} fontSize={15} href={'/#/docs/NEST-PVM/Concept.md'}>
+              <Link color={'#00A0E9'} fontSize={15} href={'/docs/NEST-PVM/Concept'}>
                 Learn more about NEST PVM<ChevronRightIcon/>
               </Link>
             </Stack>
@@ -39,7 +39,7 @@ const Developers = () => {
                 <br/>
                 <br/>
               </Text>
-              <Link color={'#00A0E9'} fontSize={15} href={'/#/docs/NEST-Oracle/Concept.md'}>
+              <Link color={'#00A0E9'} fontSize={15} href={'/docs/NEST-Oracle/Concept'}>
                 Learn more about NEST Oracle<ChevronRightIcon/>
               </Link>
             </Stack>
@@ -63,7 +63,7 @@ const Developers = () => {
                 on the basic function library.
               </Text>
               <br/>
-              <Link color={'#00A0E9'} fontSize={15} href={'/#/docs/NEST-PVM/Concept.md'}>
+              <Link color={'#00A0E9'} fontSize={15} href={'/docs/NEST-PVM/Concept'}>
                 Learn more about NEST PVM<ChevronRightIcon/>
               </Link>
             </Stack>
@@ -79,7 +79,7 @@ const Developers = () => {
                 <br/>
               </Text>
               <br/>
-              <Link color={'#00A0E9'} fontSize={15} href={'/#/docs/NEST-Oracle/Concept.md'}>
+              <Link color={'#00A0E9'} fontSize={15} href={'/docs/NEST-Oracle/Concept'}>
                 Learn more about NEST Oracle<ChevronRightIcon/>
               </Link>
             </Stack>

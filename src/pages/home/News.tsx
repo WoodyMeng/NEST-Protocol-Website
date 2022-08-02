@@ -1,4 +1,4 @@
-import {chakra, Text, Link, SimpleGrid, Stack, useMediaQuery, VStack} from "@chakra-ui/react";
+import {chakra, Link, SimpleGrid, Stack, useMediaQuery, VStack} from "@chakra-ui/react";
 import * as React from "react";
 import BigTitle from "../../components/BigTitle";
 import New_card_bg from '../../assets/image/Home/News_card_bg.png'
@@ -115,13 +115,9 @@ const News = () => {
           ))}
         </SimpleGrid>
       </Stack>
-      <Text color={'#00A0E9'} fontWeight={'semibold'} fontSize={'15px'} cursor={"pointer"}
-            onClick={() => {
-        // navigate('news')
-        window.scrollTo(0, 0)
-      }}>
+      <Link color={'#00A0E9'} fontWeight={'semibold'} fontSize={'15px'} cursor={"pointer"} href={'/news'}>
         More news<ChevronRightIcon/>
-      </Text>
+      </Link>
     </Stack>
   )
 }
