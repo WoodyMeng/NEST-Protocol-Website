@@ -13,7 +13,7 @@ const FundingOpportunity = () => {
         minH={'440px'}
         w={'100%'}
         justify={'center'}
-        spacing={['13px', '16px']}
+        spacing={isDesktop ? "16px" : "13px"}
         bgImage={isDesktop ? "/image/Research/Research_bg_4.jpg" : "/image/Research/Research_bg_4.jpg"}
         bgSize={'cover'}
         bgPosition={"center"}
@@ -30,7 +30,7 @@ const FundingOpportunity = () => {
         <chakra.img src={"/image/Research/icon_1.png"} zIndex={1}/>
         <Text
           zIndex={1}
-          fontSize={['12px', '15px']}
+          fontSize={isDesktop ? "15px" : "12px"}
           fontWeight={'600'}
           color={'#003232'}
           whiteSpace={'break-spaces'}

@@ -96,7 +96,7 @@ const LatestNews = () => {
                   isExternal
                   href={item.link}
                   style={{textDecoration: 'none'}}
-                  fontSize={['12px', '15px']}
+                  fontSize={isDesktop ? "15px" : "12px"}
                   color={'#003232'}
                   fontWeight={'700'}
                   textAlign={'start'}
@@ -109,7 +109,7 @@ const LatestNews = () => {
                   isExternal
                   href={item.link}
                   style={{textDecoration: 'none'}}
-                  fontSize={['12px', '12px', '15px']}
+                  fontSize={isDesktop ? "15px" : "12px"}
                   fontWeight={'600'}
                   color={'#7d7d7d'}
                 >

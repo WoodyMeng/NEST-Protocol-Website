@@ -13,7 +13,7 @@ const NESTFi = () => {
         minH={'440px'}
         w={'100%'}
         justify={'center'}
-        spacing={['13px', '16px']}
+        spacing={isDesktop ? "16px" : "13px"}
         bgImage={isDesktop ? "/image/Home/Home_bg_2.jpg" : "/image/Home/Home_bg_2_phone.jpg"}
         bgSize={'cover'}
         bgPosition={"center"}
@@ -26,9 +26,9 @@ const NESTFi = () => {
           objectFit={'cover'}
           overflow={"hidden"}
         />
-        <chakra.img src={"/image/Home/icon_1.png"} zIndex={1} h={['55px', '110px']}/>
+        <chakra.img src={"/image/Home/icon_1.png"} zIndex={1} h={isDesktop ? "110px" : "55px"}/>
         <Heading
-          fontSize={['17px', '24px']}
+          fontSize={isDesktop ? "24px" : "17px"}
           fontWeight={'600'}
           color={'#003232'}
           zIndex={1}
@@ -37,7 +37,7 @@ const NESTFi = () => {
         </Heading>
         <Text
           zIndex={1}
-          fontSize={['12px', '15px']}
+          fontSize={isDesktop ? "15px" : "12px"}
           fontWeight={'600'}
           color={'#003232'}
           whiteSpace={'break-spaces'}
@@ -51,7 +51,7 @@ const NESTFi = () => {
           <Button
             className={"button--primary"}
             minW={'160px'}
-            minH={['44px', '34px']}
+            minH={isDesktop ? "34px" : "44px"}
             onClick={() => {
               window.open('https://finance.nestprotocol.org/#/win', '_blank')
             }}

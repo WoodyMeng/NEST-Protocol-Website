@@ -4,12 +4,14 @@ import VacantPositions from "@site/src/pages/nest-research-academy/VacantPositio
 import Info from "@site/src/pages/nest-research-academy/Info";
 import FundingOpportunity from "@site/src/pages/nest-research-academy/FundingOpportunity";
 import Banner from "@site/src/pages/nest-research-academy/Banner";
-import {Stack} from "@chakra-ui/react";
+import {Stack, useMediaQuery} from "@chakra-ui/react";
 
 export default function NRA(): JSX.Element {
+  const [isDesktop] = useMediaQuery('(min-width: 768px)')
+
   return (
     <Layout>
-      <Stack spacing={['56px', '80px']} pb={['56px', '80px']}>
+      <Stack spacing={isDesktop ? "80px" : "56px"} pb={isDesktop ? "80px" : "56px"}>
         <Banner/>
         <Info />
         <FundingOpportunity/>

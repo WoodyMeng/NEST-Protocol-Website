@@ -14,7 +14,7 @@ const Research = () => {
         minH={'440px'}
         w={'100%'}
         justify={'center'}
-        spacing={['13px', '16px']}
+        spacing={isDesktop ? "16px" : "13px"}
         bgImage={isDesktop ? "/image/Home/Home_bg_5.jpg" : "/image/Home/Home_bg_5_phone.jpg"}
         bgSize={'cover'}
         bgPosition={"center"}
@@ -27,9 +27,9 @@ const Research = () => {
           objectFit={'cover'}
           overflow={"hidden"}
         />
-        <chakra.img src={"/image/Home/icon_2.png"} zIndex={1} h={['55px', '110px']}/>
+        <chakra.img src={"/image/Home/icon_2.png"} zIndex={1} h={ isDesktop ? "110px" : "55px"}/>
         <Heading
-          fontSize={['17px', '24px']}
+          fontSize={isDesktop ? "24px" : "17px"}
           fontWeight={'600'}
           color={'#003232'}
           zIndex={1}
@@ -39,7 +39,7 @@ const Research = () => {
         {isDesktop ? (
           <Text
             zIndex={1}
-            fontSize={['12px', '15px']}
+            fontSize={isDesktop ? "15px" : "12px"}
             fontWeight={'600'}
             color={'#003232'}
             whiteSpace={'break-spaces'}
@@ -56,7 +56,7 @@ const Research = () => {
         ) : (
           <Text
             zIndex={1}
-            fontSize={['12px', '15px']}
+            fontSize={isDesktop ? "15px" : "12px"}
             fontWeight={'600'}
             color={'#003232'}
             whiteSpace={'break-spaces'}

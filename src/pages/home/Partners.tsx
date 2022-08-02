@@ -27,7 +27,7 @@ const Partners = () => {
           objectFit={'cover'}
           overflow={"hidden"}
         />
-        <SimpleGrid columns={[3, 3, 4, 4]} zIndex={1} spacing={['20px', '40px']}>
+        <SimpleGrid columns={isDesktop ? 4 : 3} zIndex={1} spacing={isDesktop ? "40px" : "20px"}>
           {[
             {
               label: 'Huobi',

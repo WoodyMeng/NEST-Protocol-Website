@@ -8,15 +8,15 @@ const NESTFi = () => {
 
   return (
     <Layout>
-      <Stack spacing={['30px', '80px']} pb={['30px', '80px']}>
+      <Stack spacing={isDesktop ? "80px" : "30px"} pb={isDesktop ? "80px" : "30px"}>
         <Banner/>
         <Stack spacing={'48px'} align={'center'} justify={'start'}>
           <Stack
             align={'center'}
-            h={['300px', '440px']}
+            h={isDesktop ? "440px" : "300px"}
             w={'100%'}
             justify={'start'}
-            spacing={['30px', '40px']}
+            spacing={isDesktop ? "40px" : "30px"}
             bgImage={isDesktop ? "/image/NEST_Fi/NEST_Fi_bg_2.jpg" : "/image/NEST_Fi/NEST_Fi_bg_2_phone.jpg"}
             bgSize={'cover'}
             bgPosition={"center"}
@@ -25,13 +25,13 @@ const NESTFi = () => {
               position={"absolute"}
               src={isDesktop ? "/image/NEST_Fi/NEST_Fi_bg_icon_2.png" : "/image/NEST_Fi/NEST_Fi_bg_icon_2_phone.png"}
               alt={'NEST'}
-              h={['300px', '440px']}
+              h={isDesktop ? "440px" : "300px"}
               objectFit={'cover'}
               overflow={"hidden"}
             />
             <Stack
               position={'absolute'}
-              h={['375px', '440px']}
+              h={isDesktop ? "440px" : "375px"}
               w={'100%'}
               overflow={'hidden'}
               bgImage={"/image/NEST_Fi/iPhone.png"}
@@ -42,11 +42,11 @@ const NESTFi = () => {
             />
           </Stack>
         </Stack>
-        <HStack justify={"center"} pt={['110px', 0]}>
+        <HStack justify={"center"} pt={isDesktop ? 0 : "110px"}>
           <Button
             className={"button--primary"}
             minW={'160px'}
-            minH={['44px', '34px']}
+            minH={isDesktop ? "34px" : "44px"}
             onClick={() => {
               window.open('https://finance.nestprotocol.org/', '_blank')
             }}

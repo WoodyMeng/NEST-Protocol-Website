@@ -10,13 +10,13 @@ const News = () => {
     <Stack spacing={'48px'} align={'center'}>
       <BigTitle title={'News'}/>
       <Stack
-        px={['24px', '48px']}
+        px={isDesktop ? "48px" : "24px"}
         align={'center'}
         minH={'440px'}
         justify={'center'}
         spacing={'16px'}
       >
-        <SimpleGrid columns={isDesktop ? 3 : 1} spacing={['22px', '22px', '44px']} pb={'27px'}>
+        <SimpleGrid columns={isDesktop ? 3 : 1} spacing={isDesktop ? "44px" : "22px"} pb={'27px'}>
           {[
             {
               label: `Coinbase Announces Planned Listing of Tokens, Adds $NEST to ‘Experimental Asset’ Label`,
@@ -60,9 +60,9 @@ const News = () => {
                 bgSize={'cover'}
                 align={'center'}
                 justify={'center'}
-                h={['135px', '160px']}
+                h={isDesktop ? "160px" : "135px"}
               >
-                <chakra.img src={item.logo} _hover={{transform: 'scale(1.05)'}} h={['99px', '132px']}/>
+                <chakra.img src={item.logo} _hover={{transform: 'scale(1.05)'}} h={isDesktop ? "132px" : "99px"}/>
               </Stack>
               <VStack
                 w={'full'}
@@ -76,7 +76,7 @@ const News = () => {
                   isExternal
                   href={item.link}
                   style={{textDecoration: 'none'}}
-                  fontSize={['12px', '15px']}
+                  fontSize={isDesktop ? "15px" : "12px"}
                   color={'#003232'}
                   fontWeight={'700'}
                   textAlign={'start'}
@@ -89,7 +89,7 @@ const News = () => {
                   isExternal
                   href={item.link}
                   style={{textDecoration: 'none'}}
-                  fontSize={['12px', '12px', '15px']}
+                  fontSize={isDesktop ? "15px" : "12px"}
                   fontWeight={'600'}
                   color={'#7d7d7d'}
                 >

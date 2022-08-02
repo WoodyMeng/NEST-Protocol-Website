@@ -9,7 +9,7 @@ const Banner = () => {
       align={'center'}
       h={'full'}
       justify={'center'}
-      minH={['540px', '660px']}
+      minH={isDesktop ? "660px" : "540px"}
       bgImage={isDesktop ? "/image/Research/Research_bg_1.jpg" : "/image/Research/Research_bg_1_phone.jpg"}
       bgSize={'cover'}
       bgPosition={"center"}
@@ -20,31 +20,31 @@ const Banner = () => {
         position={"absolute"}
         src={isDesktop ? "/image/Research/Research_bg_icon_1.png" : "/image/Research/Research_bg_icon_1_phone.png"}
         alt={'NEST'}
-        minH={['540px', '660px']}
+        minH={isDesktop ? "660px" : "540px"}
         objectFit={'cover'}
         overflow={"hidden"}
       />
-      <Stack spacing={['22px', '44px']}>
+      <Stack spacing={isDesktop ? "44px" : "22px"}>
         <Heading
           whiteSpace={'break-spaces'}
           textAlign={'center'}
-          fontSize={['24px', '48px']}
+          fontSize={isDesktop ? "48px" : "24px"}
           fontWeight={'700'}
           zIndex={1}
           color={'#003434'}
-          maxW={['full', '720px']}
+          maxW={isDesktop ? "720px" : "100%"}
         >
           NEST Research
           { !isDesktop ? (<br/>) : ' ' }
           Academy (NRA)
         </Heading>
         <Text
-          fontSize={['12px', '17px']}
+          fontSize={ isDesktop ? "17px" : "12px"}
           fontWeight={'700'}
           textAlign={'center'}
           zIndex={1}
           color={'#003434'}
-          maxW={['full', '700px']}
+          maxW={isDesktop ? "700px" : "100%"}
         >
           NEST Research Academy (NRA), initialized by the NEST protocol,
           aims to boost theoretical and applied research in related

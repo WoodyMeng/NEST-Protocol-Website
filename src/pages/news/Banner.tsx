@@ -8,7 +8,7 @@ const Banner = () => {
     <Stack
       align={'center'}
       justify={'center'}
-      minH={['300px', '410px']}
+      minH={isDesktop ? "410px" : "300px"}
       bgImage={isDesktop ? "/image/News/News_bg_1.jpg" : "/image/News/News_bg_phone.jpg"}
       bgSize={'cover'}
       bgPosition={"center"}
@@ -19,15 +19,15 @@ const Banner = () => {
         position={"absolute"}
         src={isDesktop ? "/image/News/News_bg_icon_1.png" : "/image/News/News_bg_icon_phone.jpg"}
         alt={'NEST'}
-        minH={['300px', '410px']}
+        minH={isDesktop ? "410px" : "300px"}
         objectFit={'cover'}
         overflow={"hidden"}
       />
       <Heading
-        fontSize={['12px', '24px']}
+        fontSize={isDesktop ? "24px" : "12px"}
         fontWeight={'700'}
         textAlign={'center'}
-        maxW={['200px', '720px']}
+        maxW={ isDesktop ? "720px" : "200px"}
         zIndex={1}
         color={'#003434'}
       >
