@@ -12,7 +12,7 @@ const Research = () => {
       <Stack
         align={'center'}
         minH={'440px'}
-        w={'full'}
+        w={'100%'}
         justify={'center'}
         spacing={['13px', '16px']}
         bgImage={isDesktop ? "/image/Home/Home_bg_5.jpg" : "/image/Home/Home_bg_5_phone.jpg"}
@@ -30,7 +30,7 @@ const Research = () => {
         <chakra.img src={"/image/Home/icon_2.png"} zIndex={1} h={['55px', '110px']}/>
         <Heading
           fontSize={['17px', '24px']}
-          fontWeight={'semibold'}
+          fontWeight={'600'}
           color={'#003232'}
           zIndex={1}
         >
@@ -40,7 +40,7 @@ const Research = () => {
           <Text
             zIndex={1}
             fontSize={['12px', '15px']}
-            fontWeight={'semibold'}
+            fontWeight={'600'}
             color={'#003232'}
             whiteSpace={'break-spaces'}
             textAlign={'center'}
@@ -57,7 +57,7 @@ const Research = () => {
           <Text
             zIndex={1}
             fontSize={['12px', '15px']}
-            fontWeight={'semibold'}
+            fontWeight={'600'}
             color={'#003232'}
             whiteSpace={'break-spaces'}
             textAlign={'center'}
@@ -70,7 +70,7 @@ const Research = () => {
           </Text>
         )}
 
-        <Link color={'#00A0E9'} fontWeight={'semibold'} fontSize={'15px'} zIndex={1}
+        <Link color={'#00A0E9'} fontWeight={'600'} fontSize={'15px'} zIndex={1}
               href={'/nest-research-academy'}>
           Learn more about NRA<ChevronRightIcon/>
         </Link>

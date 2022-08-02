@@ -14,7 +14,7 @@ const NESTFi = () => {
           <Stack
             align={'center'}
             h={['300px', '440px']}
-            w={'full'}
+            w={'100%'}
             justify={'start'}
             spacing={['30px', '40px']}
             bgImage={isDesktop ? "/image/NEST_Fi/NEST_Fi_bg_2.jpg" : "/image/NEST_Fi/NEST_Fi_bg_2_phone.jpg"}
@@ -32,7 +32,7 @@ const NESTFi = () => {
             <Stack
               position={'absolute'}
               h={['375px', '440px']}
-              w={'full'}
+              w={'100%'}
               overflow={'hidden'}
               bgImage={"/image/NEST_Fi/iPhone.png"}
               bgRepeat={'no-repeat'}
@@ -44,6 +44,7 @@ const NESTFi = () => {
         </Stack>
         <HStack justify={"center"} pt={['110px', 0]}>
           <Button
+            className={"button--primary"}
             minW={'160px'}
             minH={['44px', '34px']}
             onClick={() => {

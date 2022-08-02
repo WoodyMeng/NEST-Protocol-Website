@@ -9,11 +9,12 @@ const Footer = () => {
       <>
         <Head>
           <script src="https://crypto.com/price/static/widget/index.js"></script>
+          <title></title>
         </Head>
         <Stack
-            px={['24px', '48px']}
-            py={['66px', '88px']}
-            w={'full'}
+            px={isDesktop ? "48px" : "24px"}
+            py={isDesktop ? "88px" : "66px"}
+            w={'100%'}
             align={'center'}
             bgImage={isDesktop ? "/image/Footer/Footer_bg.jpg" : "/image/Footer/Footer_bg_phone.jpg"}
             bgSize={'cover'}
@@ -30,12 +31,12 @@ const Footer = () => {
               overflow={"hidden"}
               objectPosition={"center"}
           />
-          <Stack maxW={'1440px'} justify={'space-around'} w={'full'}  zIndex={1}>
-            <Wrap spacing={['22px', '44px']} fontSize={['12px', '15px']} w={"full"}>
+          <Stack maxW={'1440px'} justify={'space-around'} w={'100%'}  zIndex={1}>
+            <Wrap spacing={isDesktop ? "44px" : "22px"} fontSize={isDesktop ? "15px" : "12px"} w={"100%"}>
               <WrapItem>
-                <Stack px={isDesktop ? '0' : '16px'} spacing={['22px', '44px']} minW={'300px'}>
+                <Stack px={isDesktop ? '0' : '16px'} spacing={isDesktop ? "44px" : "22px"} minW={'300px'}>
                   <VStack spacing={'16px'} align={"start"}>
-                    <Text fontWeight={"bold"}
+                    <Text fontWeight={"700"}
                           cursor={"pointer"}
                           onClick={() => {
                             window.open('https://finance.nestprotocol.org/', '_blank')
@@ -43,38 +44,38 @@ const Footer = () => {
                           color={'#003232'}>Launch App</Text>
                     <Text
                         color={'#7D7D7D'}
-                        fontWeight={'semibold'}
+                        fontWeight={'600'}
                     >Buy futures, options and win NEST</Text>
                   </VStack>
                   <VStack spacing={'16px'} align={"start"}>
-                    <Text fontWeight={"bold"} color={'#003232'}
+                    <Text fontWeight={"700"} color={'#003232'}
                           cursor={"pointer"} onClick={() => {
                       window.open('/news')
                     }}
                     >NEST News</Text>
-                    <Text color={'#7D7D7D'} fontWeight={'semibold'}>Latest news from NEST</Text>
+                    <Text color={'#7D7D7D'} fontWeight={'600'}>Latest news from NEST</Text>
                   </VStack>
                   <VStack spacing={'16px'} align={"start"}>
-                    <Text fontWeight={"bold"} color={'#003232'} cursor={"pointer"} onClick={() => {
+                    <Text fontWeight={"700"} color={'#003232'} cursor={"pointer"} onClick={() => {
                       window.open('/nest-research-academy')
                     }}>NEST Research Academy</Text>
-                    <Text color={'#7D7D7D'} fontWeight={'semibold'}>Learn about NRA</Text>
+                    <Text color={'#7D7D7D'} fontWeight={'600'}>Learn about NRA</Text>
                   </VStack>
                 </Stack>
               </WrapItem>
               <WrapItem>
-                <Stack px={isDesktop ? '0' : '16px'} spacing={['22px', '44px']} minW={'300px'}>
+                <Stack px={isDesktop ? '0' : '16px'} spacing={isDesktop ? "44px" : "22px"} minW={'300px'}>
                   <VStack spacing={'16px'} align={"start"}>
-                    <Text fontWeight={"bold"} color={'#003232'} cursor={"pointer"} onClick={() => {
+                    <Text fontWeight={"700"} color={'#003232'} cursor={"pointer"} onClick={() => {
                       window.open('/docs/NEST-PVM/Concept')
                     }}>NEST PVM Docs</Text>
-                    <Text color={'#7D7D7D'} fontWeight={'semibold'}>Know how to develop on NEST PVM</Text>
+                    <Text color={'#7D7D7D'} fontWeight={'600'}>Know how to develop on NEST PVM</Text>
                   </VStack>
                   <VStack spacing={'16px'} align={"start"}>
-                    <Text fontWeight={"bold"} color={'#003232'} cursor={"pointer"} onClick={() => {
+                    <Text fontWeight={"700"} color={'#003232'} cursor={"pointer"} onClick={() => {
                       window.open('/docs/NEST-Oracle/Concept')
                     }}>NEST Oracle Docs</Text>
-                    <Text color={'#7D7D7D'} fontWeight={'semibold'}>Know how to use NEST Oracle</Text>
+                    <Text color={'#7D7D7D'} fontWeight={'600'}>Know how to use NEST Oracle</Text>
                   </VStack>
                   { isDesktop && (
                       <HStack spacing={'24px'}>
@@ -123,8 +124,8 @@ const Footer = () => {
                 </Stack>
               </WrapItem>
               <WrapItem w={'400px'}>
-                <Stack spacing={'0px'} zIndex={1} w={"full"}>
-                  <Text px={'16px'} fontSize={['12px', '15px']} fontWeight={'bold'} color={'#003232'}>
+                <Stack spacing={'0px'} zIndex={1} w={"100vw"}>
+                  <Text px={'16px'} fontSize={isDesktop ? "15px" : "12px"} fontWeight={'700'} color={'#003232'}>
                     Market price
                   </Text>
                   <chakra.div
@@ -132,7 +133,7 @@ const Footer = () => {
                       data-transparent="true"
                       data-design="classic"
                       data-coin-ids="2204"
-                      w={'full'}
+                      w={'100%'}
                   ></chakra.div>
                 </Stack>
               </WrapItem>
@@ -182,8 +183,8 @@ const Footer = () => {
                 />
               </HStack>
           )}
-          <HStack justify={isDesktop ? "end" : "center"} w={"full"} maxW={1440} pt={['22px', 0]}>
-            <Text px={'24px'} color={'#7D7D7D'} fontSize={'15px'} fontWeight={'semibold'}>
+          <HStack justify={isDesktop ? "end" : "center"} w={"100vw"} maxW={1440} pt={['22px', 0]}>
+            <Text px={'24px'} color={'#7D7D7D'} fontSize={'15px'} fontWeight={'600'}>
               ©2022 NEST
             </Text>
           </HStack>

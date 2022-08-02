@@ -25,7 +25,7 @@ const Banner = () => {
       />
       <Heading
         fontSize={['12px', '24px']}
-        fontWeight={'bold'}
+        fontWeight={'700'}
         textAlign={'center'}
         maxW={['200px', '720px']}
         zIndex={1}

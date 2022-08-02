@@ -13,7 +13,7 @@ const Partners = () => {
         justify={'center'}
         spacing={'16px'}
         h={'440px'}
-        w={"full"}
+        w={"100vw"}
         bgImage={isDesktop ? "/image/Home/Home_bg_6.jpg" : "/image/Home/Home_bg_6_phone.jpg"}
         bgPosition={"bottom"}
         bgSize={'cover'}

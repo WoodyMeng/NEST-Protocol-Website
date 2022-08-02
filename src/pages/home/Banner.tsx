@@ -9,7 +9,7 @@ const Banner = () => {
       <Stack
         align={'center'}
         justify={'center'}
-        h={['540px', '615px']}
+        h={isDesktop ? "615px" : "540px"}
         bgImage={isDesktop ? "/image/Home/Home_bg_1.jpg" : "/image/Home/Home_bg_1_phone.jpg"}
         bgSize={'cover'}
         bgPosition={"center"}
@@ -26,8 +26,8 @@ const Banner = () => {
         <Heading
           whiteSpace={'break-spaces'}
           textAlign={'center'}
-          fontSize={['24px', '40px']}
-          fontWeight={'bold'}
+          fontSize={isDesktop ? "40px" : "24px"}
+          fontWeight={'700'}
           zIndex={1}
           color={'#003434'}
         >
@@ -36,8 +36,8 @@ const Banner = () => {
 
         { isDesktop ? (
           <Text
-            fontWeight={"bold"}
-            fontSize={['12px', '25px']}
+            fontWeight={"700"}
+            fontSize={isDesktop ? "25px" : "12px"}
             textAlign={"center"}
             color={'#003434'}
             zIndex={1}
@@ -53,8 +53,8 @@ const Banner = () => {
         ) : (
           <Stack>
             <Text
-              fontWeight={"bold"}
-              fontSize={['12px', '25px']}
+              fontWeight={"700"}
+              fontSize={isDesktop ? "25px" : "12px"}
               textAlign={"center"}
               color={'#003434'}
               zIndex={1}
@@ -67,8 +67,9 @@ const Banner = () => {
             </Text>
             <HStack justify={"center"} pt={'50px'}>
               <Button
+                className={"button--primary"}
                 minW={'160px'}
-                minH={['44px', '34px']}
+                minH={isDesktop ? "34px" : "44px"}
               >
                 App
               </Button>

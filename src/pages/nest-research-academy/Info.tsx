@@ -7,11 +7,11 @@ const Info = () => {
   if (isDesktop) {
     return (
       <Stack spacing={'48px'} align={'center'}>
-        <HStack w={"full"} spacing={'44px'} maxW={'1440px'}>
-          <Center color={'#003232'} fontWeight={"semibold"} w={'full'} h={'440px'} bgImage={"/image/Research/Research_bg_2.jpg"} bgPosition={"center"}
+        <HStack w={"100%"} spacing={'44px'} maxW={'1440px'}>
+          <Center color={'#003232'} fontWeight={"600"} w={'100%'} h={'440px'} bgImage={"/image/Research/Research_bg_2.jpg"} bgPosition={"center"}
                   bgSize={"cover"}>
             <Stack
-              fontWeight={'semibold'}
+              fontWeight={'600'}
               color={'#003232'}
               whiteSpace={'break-spaces'}
             >
@@ -29,10 +29,10 @@ const Info = () => {
                 workshops, webinars, and AMA.</Text>
             </Stack>
           </Center>
-          <Center color={'#003232'} fontWeight={"semibold"} w={'full'} h={'440px'} bgImage={"/image/Research/Research_bg_3.jpg"} bgPosition={"center"}
+          <Center color={'#003232'} fontWeight={"600"} w={'100%'} h={'440px'} bgImage={"/image/Research/Research_bg_3.jpg"} bgPosition={"center"}
                   bgSize={"cover"}>
             <Stack
-              fontWeight={'semibold'}
+              fontWeight={'600'}
               color={'#003232'}
               whiteSpace={'break-spaces'}>
               <Text fontSize={'25px'}>Facilitate Academic
@@ -57,12 +57,12 @@ const Info = () => {
   } else {
     return (
       <Stack spacing={'48px'} align={'center'}>
-        <Stack w={"full"} spacing={'44px'} maxW={'1440px'}>
-          <Center color={'#003232'} fontWeight={"semibold"} w={'full'} h={'440px'} bgImage={"/image/Research/Research_bg_2.jpg"} bgPosition={"center"}
+        <Stack w={"100%"} spacing={'44px'} maxW={'1440px'}>
+          <Center color={'#003232'} fontWeight={"600"} w={'100%'} h={'440px'} bgImage={"/image/Research/Research_bg_2.jpg"} bgPosition={"center"}
                   bgSize={"cover"}>
             <Stack
               p={'24px'}
-              fontWeight={'semibold'}
+              fontWeight={'600'}
               color={'#003232'}
               whiteSpace={'break-spaces'}
             >
@@ -76,11 +76,11 @@ const Info = () => {
               </Text>
             </Stack>
           </Center>
-          <Center color={'#003232'} fontWeight={"semibold"} w={'full'} h={'440px'} bgImage={"/image/Research/Research_bg_3.jpg"} bgPosition={"center"}
+          <Center color={'#003232'} fontWeight={"600"} w={'100%'} h={'440px'} bgImage={"/image/Research/Research_bg_3.jpg"} bgPosition={"center"}
                   bgSize={"cover"}>
             <Stack
               p={'24px'}
-              fontWeight={'semibold'}
+              fontWeight={'600'}
               color={'#003232'}
               whiteSpace={'break-spaces'}
             >

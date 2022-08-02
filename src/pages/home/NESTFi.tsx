@@ -11,7 +11,7 @@ const NESTFi = () => {
       <Stack
         align={'center'}
         minH={'440px'}
-        w={'full'}
+        w={'100%'}
         justify={'center'}
         spacing={['13px', '16px']}
         bgImage={isDesktop ? "/image/Home/Home_bg_2.jpg" : "/image/Home/Home_bg_2_phone.jpg"}
@@ -29,7 +29,7 @@ const NESTFi = () => {
         <chakra.img src={"/image/Home/icon_1.png"} zIndex={1} h={['55px', '110px']}/>
         <Heading
           fontSize={['17px', '24px']}
-          fontWeight={'semibold'}
+          fontWeight={'600'}
           color={'#003232'}
           zIndex={1}
         >
@@ -38,7 +38,7 @@ const NESTFi = () => {
         <Text
           zIndex={1}
           fontSize={['12px', '15px']}
-          fontWeight={'semibold'}
+          fontWeight={'600'}
           color={'#003232'}
           whiteSpace={'break-spaces'}
           textAlign={'center'}
@@ -49,6 +49,7 @@ const NESTFi = () => {
         </Text>
         <Stack pt={'16px'}>
           <Button
+            className={"button--primary"}
             minW={'160px'}
             minH={['44px', '34px']}
             onClick={() => {

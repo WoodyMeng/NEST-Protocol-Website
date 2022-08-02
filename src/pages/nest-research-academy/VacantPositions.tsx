@@ -11,7 +11,7 @@ const VacantPositions = () => {
       <Stack
         align={'center'}
         minH={'440px'}
-        w={'full'}
+        w={'100%'}
         justify={'center'}
         spacing={['13px', '16px']}
         bgImage={isDesktop ? "/image/Research/Research_bg_5.jpg" : "/image/Research/Research_bg_5_phone.jpg"}
@@ -31,7 +31,7 @@ const VacantPositions = () => {
         <Text
           zIndex={1}
           fontSize={['12px', '15px']}
-          fontWeight={'semibold'}
+          fontWeight={'600'}
           color={'#003232'}
           whiteSpace={'break-spaces'}
           textAlign={'center'}
@@ -45,7 +45,7 @@ const VacantPositions = () => {
           Those interested, please send your academic CV to
           { isDesktop && ( <br/>) }
           <br/>
-          <Link color={'#00A0E9'} fontWeight={'semibold'} fontSize={'15px'} zIndex={1}
+          <Link color={'#00A0E9'} fontWeight={'600'} fontSize={'15px'} zIndex={1}
                 href={'mailto:nra@nestprotocol.org'} isExternal>
             nra@nestprotocol.org
           </Link>

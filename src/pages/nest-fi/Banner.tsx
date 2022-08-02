@@ -9,7 +9,7 @@ const Banner = () => {
       align={'center'}
       justify={'center'}
       h={'410px'}
-      w={"full"}
+      w={"100%"}
       bgImage={isDesktop ? "/image/NEST_Fi/NEST_Fi_bg_1.jpg" : "/image/NEST_Fi/NEST_Fi_bg_1_phone.jpg"}
       bgSize={'cover'}
       bgPosition={"center"}
@@ -25,12 +25,12 @@ const Banner = () => {
         overflow={"hidden"}
       />
       <Stack spacing={['22px', '44px']}>
-        <Heading textAlign={'center'} fontSize={['24px', '48px']} fontWeight={'bold'} zIndex={1} color={'#003434'}>
+        <Heading textAlign={'center'} fontSize={['24px', '48px']} fontWeight={'700'} zIndex={1} color={'#003434'}>
           NEST
           { !isDesktop ? (<br/>) : " " }
           Financial Market
         </Heading>
-        <Text textAlign={"center"} fontWeight={"bold"} fontSize={[12, 24]} color={'#003434'} zIndex={1}>
+        <Text textAlign={"center"} fontWeight={"700"} fontSize={[12, 24]} color={'#003434'} zIndex={1}>
           Get NEST token here and buy futures,
           <br/>
           options or play DeFi games to win NEST.

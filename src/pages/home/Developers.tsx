@@ -10,8 +10,8 @@ const Developers = () => {
     return (
       <Stack spacing={'48px'} align={'center'}>
         <BigTitle title={'Developers'}/>
-        <HStack w={"full"} spacing={'44px'} maxW={'1440px'}>
-          <Center color={'#003232'} fontWeight={"semibold"} w={'full'} h={'440px'} bgImage={"/image/Home/Home_bg_3.jpg"} bgSize={"cover"} bgPosition={"center"}>
+        <HStack w={"100%"} spacing={'44px'} maxW={'1440px'}>
+          <Center color={'#003232'} fontWeight={"600"} w={'100%'} h={'440px'} bgImage={"/image/Home/Home_bg_3.jpg"} bgSize={"cover"} bgPosition={"center"}>
             <Stack maxW={'360px'}>
               <Text fontSize={25}>
                 NEST PVM
@@ -26,7 +26,7 @@ const Developers = () => {
               </Link>
             </Stack>
           </Center>
-          <Center color={'#003232'} fontWeight={"semibold"} w={'full'} h={'440px'} bgImage={"/image/Home/Home_bg_4.jpg"} bgSize={"cover"} bgPosition={"center"}>
+          <Center color={'#003232'} fontWeight={"600"} w={'100%'} h={'440px'} bgImage={"/image/Home/Home_bg_4.jpg"} bgSize={"cover"} bgPosition={"center"}>
             <Stack maxW={'360px'}>
               <Text fontSize={25}>
                 NEST Oracle
@@ -49,8 +49,8 @@ const Developers = () => {
     return (
       <Stack spacing={'48px'} align={'center'}>
         <BigTitle title={'Developers'}/>
-        <Stack w={"full"} spacing={'44px'} maxW={'1440px'}>
-          <Center color={'#003232'} fontWeight={"semibold"} w={'full'} h={'440px'} bgImage={"/image/Home/Home_bg_3.jpg"} bgSize={"cover"} bgPosition={"center"}>
+        <Stack w={"100%"} spacing={'44px'} maxW={'1440px'}>
+          <Center color={'#003232'} fontWeight={"600"} w={'100%'} h={'440px'} bgImage={"/image/Home/Home_bg_3.jpg"} bgSize={"cover"} bgPosition={"center"}>
             <Stack maxW={'360px'} p={'12px'} align={"center"}>
               <Text fontSize={25}>
                 NEST PVM
@@ -66,7 +66,7 @@ const Developers = () => {
               </Link>
             </Stack>
           </Center>
-          <Center color={'#003232'} fontWeight={"semibold"} w={'full'} h={'440px'} bgImage={"/image/Home/Home_bg_4.jpg"}  bgSize={"cover"} bgPosition={"center"}>
+          <Center color={'#003232'} fontWeight={"600"} w={'100%'} h={'440px'} bgImage={"/image/Home/Home_bg_4.jpg"}  bgSize={"cover"} bgPosition={"center"}>
             <Stack maxW={'360px'} p={'12px'} align={"center"}>
               <Text fontSize={25}>
                 NEST Oracle

@@ -16,7 +16,7 @@ const News = () => {
         justify={'center'}
         spacing={'16px'}
       >
-        <SimpleGrid columns={[2]} spacing={['22px', '22px', '44px']} pb={'27px'}>
+        <SimpleGrid columns={isDesktop ? 3 : 1} spacing={['22px', '22px', '44px']} pb={'27px'}>
           {[
             {
               label: `Coinbase Announces Planned Listing of Tokens, Adds $NEST to ‘Experimental Asset’ Label`,
@@ -38,18 +38,11 @@ const News = () => {
               logo: "/image/Home/News_card_icon_2.png",
               desc: 'Through Crypto.com’s NEST Price Page, you can now directly access NEST’s RSS news feed.',
               link: 'https://nest-protocol-82041.medium.com/nests-rss-feed-integrated-with-crypto-com-price-page-9323828d28d9'
-            },
-            {
-              label: 'NEST Protocol partners with UTU.ONE to seek and create more opportunities in DAO governance',
-              bg: "/image/Home/News_card_bg_3.png",
-              logo: "/image/Home/News_card_icon_3.png",
-              desc: 'NEST Protocol is delighted to announce a strategic.',
-              link: 'https://nest-protocol-82041.medium.com/nest-protocol-partners-with-utu-one-to-seek-and-create-more-opportunities-in-dao-governance-1ab02d072d7d'
             }
           ].map(item => (
             <VStack
               key={item.label}
-              w={isDesktop ? '308px' : 'full'}
+              w={isDesktop ? '308px' : '100%'}
               spacing={0}
               border={'1px solid #EEEEEE'}
               boxShadow={'0px 0px 45px 5px #E5E5E5'}
@@ -63,7 +56,7 @@ const News = () => {
               <Stack
                 bgImage={item.bg}
                 bgRepeat={'no-repeat'}
-                w={'full'}
+                w={'100%'}
                 bgSize={'cover'}
                 align={'center'}
                 justify={'center'}
@@ -85,7 +78,7 @@ const News = () => {
                   style={{textDecoration: 'none'}}
                   fontSize={['12px', '15px']}
                   color={'#003232'}
-                  fontWeight={'bold'}
+                  fontWeight={'700'}
                   textAlign={'start'}
                   w={'full'}
                   whiteSpace={'break-spaces'}
@@ -97,7 +90,7 @@ const News = () => {
                   href={item.link}
                   style={{textDecoration: 'none'}}
                   fontSize={['12px', '12px', '15px']}
-                  fontWeight={'semibold'}
+                  fontWeight={'600'}
                   color={'#7d7d7d'}
                 >
                   {item.desc}
@@ -107,7 +100,7 @@ const News = () => {
           ))}
         </SimpleGrid>
       </Stack>
-      <Link color={'#00A0E9'} fontWeight={'semibold'} fontSize={'15px'} cursor={"pointer"} href={'/news'}>
+      <Link color={'#00A0E9'} fontWeight={'600'} fontSize={'15px'} cursor={"pointer"} href={'/news'}>
         More news<ChevronRightIcon/>
       </Link>
     </Stack>

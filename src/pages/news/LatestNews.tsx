@@ -1,26 +1,21 @@
 import {chakra, Heading, Link, SimpleGrid, Stack, useMediaQuery, VStack} from "@chakra-ui/react";
 import * as React from "react";
+import BigTitle from "@site/src/components/BigTitle";
 
 const LatestNews = () => {
   const [isDesktop] = useMediaQuery('(min-width: 768px)')
 
   return (
     <Stack spacing={'48px'} align={'center'}>
-      <Stack px={['24px', '48px']} w={'full'} align={'center'}>
-        <Stack maxW={'1440px'} w={'full'}>
-          <Heading fontSize={['24px', '48px']} color={'#003232'}>
-            The Latest from NEST
-          </Heading>
-        </Stack>
-      </Stack>
+      <BigTitle title={"The Latest from NEST"} />
       <Stack
-        px={['24px', '48px']}
+        px={isDesktop ? "48px" : "24px"}
         align={'center'}
         minH={'440px'}
         justify={'center'}
         spacing={'16px'}
       >
-        <SimpleGrid columns={[1, 1, 2, 3]} spacing={['22px', '22px', '44px']} pb={'27px'}>
+        <SimpleGrid columns={isDesktop ? 3 : 1} spacing={isDesktop ? "44px" : '22px'} pb={'27px'}>
           {[
             {
               label: `Coinbase Announces Planned Listing of Tokens, Adds $NEST to ‘Experimental Asset’ Label`,
@@ -67,7 +62,7 @@ const LatestNews = () => {
           ].map(item => (
             <VStack
               key={item.label}
-              w={isDesktop ? '308px' : 'full'}
+              w={isDesktop ? '308px' : '100%'}
               spacing={0}
               border={'1px solid #EEEEEE'}
               boxShadow={'0px 0px 45px 5px #E5E5E5'}
@@ -81,7 +76,7 @@ const LatestNews = () => {
               <Stack
                 bgImage={item.bg}
                 bgRepeat={'no-repeat'}
-                w={'full'}
+                w={'100%'}
                 bgSize={'cover'}
                 align={'center'}
                 justify={'center'}
@@ -90,7 +85,7 @@ const LatestNews = () => {
                 <chakra.img src={item.logo} _hover={{transform: 'scale(1.05)'}}/>
               </Stack>
               <VStack
-                w={'full'}
+                w={'100%'}
                 px={'44px'}
                 py={'44px'}
                 spacing={'8px'}
@@ -103,9 +98,9 @@ const LatestNews = () => {
                   style={{textDecoration: 'none'}}
                   fontSize={['12px', '15px']}
                   color={'#003232'}
-                  fontWeight={'bold'}
+                  fontWeight={'700'}
                   textAlign={'start'}
-                  w={'full'}
+                  w={'100%'}
                   whiteSpace={'break-spaces'}
                 >
                   {item.label}
@@ -115,7 +110,7 @@ const LatestNews = () => {
                   href={item.link}
                   style={{textDecoration: 'none'}}
                   fontSize={['12px', '12px', '15px']}
-                  fontWeight={'semibold'}
+                  fontWeight={'600'}
                   color={'#7d7d7d'}
                 >
                   {item.desc}

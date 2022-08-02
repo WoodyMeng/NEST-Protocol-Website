@@ -29,7 +29,7 @@ const Banner = () => {
           whiteSpace={'break-spaces'}
           textAlign={'center'}
           fontSize={['24px', '48px']}
-          fontWeight={'bold'}
+          fontWeight={'700'}
           zIndex={1}
           color={'#003434'}
           maxW={['full', '720px']}
@@ -40,7 +40,7 @@ const Banner = () => {
         </Heading>
         <Text
           fontSize={['12px', '17px']}
-          fontWeight={'bold'}
+          fontWeight={'700'}
           textAlign={'center'}
           zIndex={1}
           color={'#003434'}
