@@ -83,7 +83,7 @@
     display: none;
 }
 
-div,a,img {
+div, a, img {
     -webkit-tap-highlight-color: transparent;
     -webkit-touch-callout: none;
 }
@@ -97,6 +97,23 @@ div,a,img {
     font-weight: 600;
     border: none;
     cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .nav-app-item {
+        display: none;
+    }
+
+    .menu__link {
+        color: #003232;
+        font-size: 25px;
+        font-weight: 500;
+    }
+
+    .menu__link--active {
+        color: #EAAA00;
+        font-weight: 600;
+    }
 }
 
 /* cyrillic-ext */

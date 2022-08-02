@@ -9,7 +9,6 @@ const Footer = () => {
       <>
         <Head>
           <script src="https://crypto.com/price/static/widget/index.js"></script>
-          <title></title>
         </Head>
         <Stack
             px={isDesktop ? "48px" : "24px"}
