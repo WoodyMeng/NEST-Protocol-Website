@@ -18,10 +18,12 @@
 }
 
 h1, h2, h3, h4, h5 {
+    color: #003232;
     font-family: Montserrat, sans-serif;
 }
 
 p {
+    color: #003232;
     font-family: Montserrat, sans-serif;
 }
 
@@ -63,10 +65,12 @@ p {
 .menu__link {
     font-size: 15px;
     font-weight: 500;
+    color: #003232;
 }
 
 .menu__link--active {
     font-weight: 600;
+    color: #EAAA00;
 }
 
 .table-of-contents__link {
