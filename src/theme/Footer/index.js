@@ -34,7 +34,7 @@ const Footer = () => {
             <Wrap spacing={isDesktop ? "44px" : "22px"} fontSize={isDesktop ? "15px" : "12px"} w={"100%"}>
               <WrapItem>
                 <Stack px={isDesktop ? '0' : '16px'} spacing={isDesktop ? "44px" : "22px"} minW={'300px'}>
-                  <VStack spacing={'16px'} align={"start"}>
+                  <VStack align={"start"} spacing={0}>
                     <Text fontWeight={"700"}
                           cursor={"pointer"}
                           onClick={() => {
@@ -46,7 +46,7 @@ const Footer = () => {
                         fontWeight={'600'}
                     >Buy futures, options and win NEST</Text>
                   </VStack>
-                  <VStack spacing={'16px'} align={"start"}>
+                  <VStack spacing={0} align={"start"}>
                     <Text fontWeight={"700"} color={'#003232'}
                           cursor={"pointer"} onClick={() => {
                       window.open('/news')
@@ -54,7 +54,7 @@ const Footer = () => {
                     >NEST News</Text>
                     <Text color={'#7D7D7D'} fontWeight={'600'}>Latest news from NEST</Text>
                   </VStack>
-                  <VStack spacing={'16px'} align={"start"}>
+                  <VStack spacing={0} align={"start"}>
                     <Text fontWeight={"700"} color={'#003232'} cursor={"pointer"} onClick={() => {
                       window.open('/nest-research-academy')
                     }}>NEST Research Academy</Text>
@@ -64,13 +64,13 @@ const Footer = () => {
               </WrapItem>
               <WrapItem>
                 <Stack px={isDesktop ? '0' : '16px'} spacing={isDesktop ? "44px" : "22px"} minW={'300px'}>
-                  <VStack spacing={'16px'} align={"start"}>
+                  <VStack spacing={0} align={"start"}>
                     <Text fontWeight={"700"} color={'#003232'} cursor={"pointer"} onClick={() => {
                       window.open('/docs/NEST-PVM/Concept')
                     }}>NEST PVM Docs</Text>
                     <Text color={'#7D7D7D'} fontWeight={'600'}>Know how to develop on NEST PVM</Text>
                   </VStack>
-                  <VStack spacing={'16px'} align={"start"}>
+                  <VStack spacing={0} align={"start"}>
                     <Text fontWeight={"700"} color={'#003232'} cursor={"pointer"} onClick={() => {
                       window.open('/docs/NEST-Oracle/Concept')
                     }}>NEST Oracle Docs</Text>
@@ -123,7 +123,7 @@ const Footer = () => {
                 </Stack>
               </WrapItem>
               <WrapItem w={'400px'}>
-                <Stack spacing={'0px'} zIndex={1} w={"100vw"}>
+                <Stack spacing={"-12px"} zIndex={1} w={"100%"}>
                   <Text px={'16px'} fontSize={isDesktop ? "15px" : "12px"} fontWeight={'700'} color={'#003232'}>
                     Market price
                   </Text>
@@ -182,7 +182,7 @@ const Footer = () => {
                 />
               </HStack>
           )}
-          <HStack justify={isDesktop ? "end" : "center"} w={"100vw"} maxW={1440} pt={['22px', 0]}>
+          <HStack justify={isDesktop ? "end" : "center"} w={"100%"} maxW={1440} pt={isDesktop ? 0 : "16px"}>
             <Text px={'24px'} color={'#7D7D7D'} fontSize={'15px'} fontWeight={'600'}>
               ©2022 NEST
             </Text>
