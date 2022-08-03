@@ -7,6 +7,9 @@
     position: sticky;
     display: flex;
     justify-content: center;
+    background-image: url("/image/Footer/Footer_bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .navbar__item {
