@@ -23,22 +23,22 @@ const News = () => {
               bg: "/image/Home/News_card_bg.png",
               logo: "/image/Home/News_card_icon.png",
               desc: `Leading United States-based cryptocurrency exchange`,
-              link: 'https://cryptonews.net/news/market/9582857'
+              link: '/blog/Coinbase-Announces-Planned-Listing-of-Tokens-Adds-$NEST-to-Experimental-Asset-Label'
             },
             {
               label: 'NEST Protocol: A New Paradigm of Game Theoretic Oracle',
               bg: "/image/Home/News_card_bg_1.png",
               logo: "/image/Home/News_card_icon_1.png",
               desc: 'Blockchain innovation defined the major part of the last decade,with cryptocurrency disrupting.',
-              link: 'https://nest-protocol-82041.medium.com/nest-protocol-a-new-paradigm-of-game-theoretic-oracle-187c1f853128'
+              link: '/blog/NEST-Protocol-A-New-Paradigm-of-Game-Theoretic-Oracle'
             },
             {
               label: 'NEST’s RSS FEED INTEGRATED WITH CRYPTO.COM PRICE PAGE',
               bg: "/image/Home/News_card_bg_2.png",
               logo: "/image/Home/News_card_icon_2.png",
               desc: 'Through Crypto.com’s NEST Price Page, you can now directly access NEST’s RSS news feed.',
-              link: 'https://nest-protocol-82041.medium.com/nests-rss-feed-integrated-with-crypto-com-price-page-9323828d28d9'
-            }
+              link: '/blog/NEST\'s-RSS-FEED-INTEGRATED-WITH-CRYPTO.COM-PRICE-PAGE'
+            },
           ].map(item => (
             <VStack
               key={item.label}
