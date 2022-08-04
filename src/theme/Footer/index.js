@@ -68,13 +68,13 @@ const Footer = () => {
                     <Text fontWeight={"700"} color={'#003232'} cursor={"pointer"} onClick={() => {
                       window.open('/docs/NEST-PVM/Concept')
                     }}>NEST PVM Docs</Text>
-                    <Text color={'#7D7D7D'} fontWeight={'600'}>Know how to develop on NEST PVM</Text>
+                    <Text color={'#7D7D7D'} fontWeight={'600'}>Learn how to develop on NEST PVM</Text>
                   </VStack>
                   <VStack spacing={0} align={"start"}>
                     <Text fontWeight={"700"} color={'#003232'} cursor={"pointer"} onClick={() => {
                       window.open('/docs/NEST-Oracle/Concept')
                     }}>NEST Oracle Docs</Text>
-                    <Text color={'#7D7D7D'} fontWeight={'600'}>Know how to use NEST Oracle</Text>
+                    <Text color={'#7D7D7D'} fontWeight={'600'}>Learn how to use NEST Oracle</Text>
                   </VStack>
                   { isDesktop && (
                       <HStack spacing={'24px'}>
