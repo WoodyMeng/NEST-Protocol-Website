@@ -26,14 +26,14 @@ const Banner = () => {
       />
       <Stack spacing={isDesktop ? "44px" : "22px"}>
         <Heading textAlign={'center'} fontSize={isDesktop ? "48px" : "24px"} fontWeight={'700'} zIndex={1} color={'#003434'}>
-          NEST
+          Decentralized
           { !isDesktop ? (<br/>) : " " }
           Financial Market
         </Heading>
         <Text textAlign={"center"} fontWeight={"700"} fontSize={[12, 24]} color={'#003434'} zIndex={1}>
-          Get NEST token here and buy futures,
+          NEST Financial Market provides futures
           <br/>
-          options or play DeFi games to win NEST.
+          and options with infinite liquidity.
         </Text>
       </Stack>
     </Stack>
