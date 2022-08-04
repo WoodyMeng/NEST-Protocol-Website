@@ -44,7 +44,7 @@ const Banner = () => {
           textAlign={'center'}
           zIndex={1}
           color={'#003434'}
-          maxW={isDesktop ? "700px" : "100%"}
+          maxW={isDesktop ? "720px" : "100%"}
         >
           The NEST Research Academy (NRA), founded by the NEST protocol, aims to promote theoretical and
           applied research in fields such as blockchain, finance, economics, game theory, machine learning,
