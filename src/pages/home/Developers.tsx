@@ -17,9 +17,7 @@ const Developers = () => {
                 NEST PVM
               </Text>
               <Text>
-                NEST Probability Virtual Machine (PVM)
-                is a virtual machine-like structure based
-                on the basic function library.
+                NEST Probability Virtual Machine (PVM) is a virtual machine-like structure based on the basic function library. Developers can develop various exciting applications based on the function library, similar to Ethereum virtual machine (EVM) programming.
               </Text>
               <Link color={'#00A0E9'} fontSize={15} href={'/docs/NEST-PVM/Concept'}>
                 Learn more about NEST PVM<ChevronRightIcon/>
@@ -34,6 +32,8 @@ const Developers = () => {
               <Text>
                 NEST oracle is the only truly decentralized
                 oracle on the market today.
+                <br/>
+                <br/>
                 <br/>
                 <br/>
               </Text>
