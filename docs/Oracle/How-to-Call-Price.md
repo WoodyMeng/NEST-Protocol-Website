@@ -1,8 +1,8 @@
 ---
-sidebar_position: 1
+sidebar_position: 3
 ---
 
-# API Calls
+# How to Call Price
 
 Anyone can call the prices in NEST oracle. The NEST oracle prices can be called by the following steps:
 

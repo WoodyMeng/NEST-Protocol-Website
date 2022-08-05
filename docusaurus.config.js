@@ -82,7 +82,7 @@ const config = {
             {to: '/nest-fi', label: 'NEST Fi', position: 'right'},
             {
               type: 'doc',
-              docId: 'NEST-PVM/Concept',
+              docId: 'Building-On-NEST/Mechanism',
               position: 'right',
               label: 'Developers',
             },

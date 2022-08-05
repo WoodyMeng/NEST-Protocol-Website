@@ -1,8 +1,8 @@
 ---
-sidebar_position: 2
+sidebar_position: 4
 ---
 
-## How to Mining on NEST Oracle
+# How to Mining
 
 Anyone can earn mining rewards by providing quotes on NEST Oracle. Here is the price generation process of NEST Oracle.
 

@@ -2,18 +2,17 @@
 sidebar_position: 0
 ---
 
-## NEST Oracle
+# Mechanism
 
 NEST Oracle is a truly decentralized oracle, check the [whitepaper](https://www.nestprotocol.org/doc/ennestwhitepaper.pdf) to learn more about it.
 
-### Mechanisms
-#### Valuation Asset and Auotation Asset
+## Valuation Asset and Auotation Asset
 
 Each quotation track requires a unified amount of valuation asset and quotation asset. Thus, to participate in the price quotation, the maker needs to provide sufficient quotation asset with the same value as the valuation asset.
 
 > Take the ETH price quotation as one example, where the valuation asset is USDT, and its amount is 2000USDT. In this case, each quotation needs 2000USDT and 2000USDT-worthy ETH.
 
-#### Quotation
+## Quotation
 
 The quotation participation needs to prepare valuation assets, quotation assets, quotation fees, and collateral assets (the collateral assets of all quotations are currently NEST). Valuation assets, quotation assets, and collateral assets can be used repeatedly in the contract without the need for transferring in every time (to save gas fees).
 
@@ -23,7 +22,7 @@ After the quotation, there will be a 5-minute verification period (practically c
 2. directly start the next quotation (if the relevant assets are sufficient) and close all of them after multiple quotations (which can save gas fees);
 3. withdraw the quotation assets.
 
-#### Verification
+## Verification
 
 During the 5-minute verification period of one typical quotation, anyone can question the price and choose to trade either valuation or quotation asset. Suppose all of the quotation asset is traded; in that case, the quotation will not take effect (If only part of the quotation asset is traded, the price will still take effect after the verification period). While trading valuation or quotation assets, a verifier must submit a new quotation with asset scales twice as the just-traded transaction.
 
@@ -33,7 +32,7 @@ Quotation -> Verified Quotation -> Verified Quotation -> Verified Quotation -> â
 
 > To prevent exogenous funds in the market from attacking the oracle, the protocol allows the verifiers, only four times, to double the sizes of the valuation and quotation assets. This restriction does not apply to the collateral asset since it is endogenous to the system.
 
-#### Mining Volume
+## Mining Volume
 
 Mining Volume of Current Block = Mining Volume per Block * Number of Blocks between Last Quotation and Current Quotation
 
